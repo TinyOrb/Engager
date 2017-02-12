@@ -1,0 +1,88 @@
+#hbody{
+	margin:auto;
+	//background:black;
+	width:70%;
+	position:relative;
+	top:150px;
+	min-height:500px;
+}
+
+.profile{
+	width:100%;
+	min-height:500px;
+	height:100%;
+}
+
+div.profile_toggle_button{
+	width:100%;
+	height:50px;
+	background:#bcbcbc;
+	padding: 2px 8px 0px 20px;
+	
+}
+
+div.profile_table_div{
+	width:100%;
+	background:#e5e5e5;
+	padding: 10px 8px 0px 20px;
+	min-height:100px;
+}
+
+input
+{
+	width: 300px;
+	height:43px;
+	border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+
+input[type="text"]
+{
+	width: 300px;
+	height:43px;
+	border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=date]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    display: none;
+}
+button{
+	height:40px;
+	width:200px;
+	background:#226e01;
+	color : white;
+	text-align:center;
+	border-radius:5px;
+}
+
+table tr td{
+	padding:5px 5px 5px 5px;
+	margin: 10px 20px 10px 20px;
+}
+.profile_close{
+	width:100%;
+	height:10px;
+	background:#bcbcbc;
+	padding: 2px 8px 0px 20px;
+	margin-bottom:100px;
+}
+#report_table{
+	align:center;
+}
+button#edit_button{
+	position:absolute;
+	right:10px;
+	top:3px;
+	background:grey;
+	color:black;
+	border-color:#d6d6d6;
+	width:150px;
+	font-weight:bold;
+}
+.loading{
+	width:96%;
+}

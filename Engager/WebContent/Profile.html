@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Profile</title>
+
+<script src="script/jquery.min.js"></script>
+<script src="script/dropdown/dd.js"></script>
+<script src="script/jetter.js"></script>
+<script src="script/profile.js"></script>
+
+<link rel="stylesheet" href="style/dropdown/dd.css">
+<link rel="stylesheet" href="style/cmn.css">
+<link rel="stylesheet" href="style/profile.css">
+
+<link rel="shortcut icon" type="image/png" href="/image/TinyOrb-ico-logo.png"/>
+
+</head>
+<body>
+
+<div id="header">
+	<div class="dropdown" id="logedin">
+		<a class="account" id="act">Guest</a>
+			<div class="submenu">
+			<ul class="root">
+				<li><a href="/DashBoard.html">Dashboard</a></li>
+				<li><a href="/Profile.html">Profile</a></li>
+				<li><a href="/Report.html">Report</a></li>
+				<li><a href="/logout.html">Logout</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="newpost">
+		<a href="/EditorPage.html?id=new&&PID=-1" target="_blank"
+			id="postbtn">New Post</a>
+	</div>
+</div>
+
+	<div id="hbody">
+		<div id="profile">
+		
+			<div class="profile_toggle_button">
+				<h4>Profile</h4>
+				<button id="edit_button">Edit</button>
+			</div>
+			<div class="profile_table_div">
+			<img src="image/Loading.gif" class="loading">
+				<table class="profile_table">
+					<tr>
+						<td><b>Name</b></td>
+						<td><input type=text id="firstname" placeholder="First Name *"/></td>
+						<td><input type=text id="lastname" placeholder="Last Name *"/></td>
+					</tr>
+					<tr>
+						<td><b>Address</b></td>
+						<td>
+							<input list="country" name="country"/>
+							<datalist id="country"></datalist>
+						</td>
+						<td><input type=text id="state" placeholder="State *"/></td>
+					</tr>
+					<tr>
+						<td><b>Alternate Email</b></td>
+						<td colspan=2><input type="text" id="AlternativeEmail"/></td>
+					</tr>
+					<tr>
+						<td><b>Gender</b></td>
+						<td colspan=2>
+							<input list="gender" name="gender"/>
+							<datalist id="gender">
+								<option value="Female">
+								<option value="Male">
+								<option value="Not mention">
+							</datalist>
+						</td>
+					</tr>
+					<tr>
+						<td><b>Date of birth</b></td>
+						<td colspan=2><input type="date" id="DOB"/></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td colspan=2 rowspan=2><button id="update_button"><b>Update</b></button></td>
+					</tr>
+				</table>
+			</div>
+			
+			
+			<div class="profile_toggle_button">
+				<h4>Public profile</h4>
+			</div>
+			<div class="profile_table_div">
+			<img src="image/Loading.gif" class="loading">
+				<table class="profile_table">
+					<tr>
+						<td><b>LinkedIn Profile</b></td>
+						<td><input type="url" id="linkedin"/></td>
+					</tr>
+					<tr>
+						<td><b>Twitter</b></td>
+						<td><input type="url" id="twitter"/></td>
+					</tr>
+					<tr>
+						<td><b>Website</b></td>
+						<td colspan=2><input type="url" id="AlternativeEmail"/></td>
+					</tr>
+				</table>
+			</div>
+			
+			<div class="profile_close">
+			</div>
+			
+		</div>
+	</div>  
+
+
+<div id="message"></div>
+
+</body>
+</html>

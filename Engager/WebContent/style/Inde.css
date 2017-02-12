@@ -1,0 +1,127 @@
+html, body{
+	position:absolute;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+	margin:auto;
+}
+
+#welcome_input{
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background:rgba(255,255,255,0);	
+}
+
+#user_info{
+	width:500px;
+	Height:180px;
+	margin:auto;
+	position:absolute;
+	top:30%;
+	left:30%;
+	background:lightgrey;
+	border-radius:5px;
+	
+}
+
+input[type="text"]{
+	width: 90%;
+    margin: 25px 20px;
+    height:45px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="button"]
+{
+	width: 90%;
+    background-color: #4CAF50;
+    color: white;
+    margin: 0px 20px;
+    height:45px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover{
+	background-color: #45a049;
+}
+
+#anyway{
+	margin:auto;
+	font-weight:bold;
+	color:red;
+	font-style:italic;
+	position:relative;
+	left:35%;
+	text-decoration: underline;
+	cursor:pointer;
+}
+
+
+
+/* text area and button*/
+
+textarea#popup{
+	resize:none;
+	margin:auto;
+	height:40 px;
+}
+
+/*Main content*/
+
+
+#main_content{
+	position:absolute;
+	top:0;
+	left:0;
+	height:100%;
+	width:100%;
+	margin:auto;
+	background:url(../image/gf.jpg) no-repeat center;
+}
+
+.home_content{
+	/*pointer-events: none;*/
+  /* for "disabled" effect */
+  	opacity: 0.5;
+}
+
+#default{
+	position:relative;
+	top:0;
+	left:0;
+	
+}
+
+#homie{
+	position:absolute;
+	top:40%;
+	left:12%;
+}
+#homie:hover{
+	opacity:0.9;
+}
+#homie:active{
+	opacity:0.8;
+	transform:translateY(1px);
+}
+#signin{
+	position:absolute;
+	top:40%;
+	left:42%;
+}
+#signin:hover{
+	opacity:0.9;
+}
+#signin:active{
+	opacity:0.8;
+	transform:translateY(1px);
+}

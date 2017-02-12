@@ -1,0 +1,102 @@
+html, body {
+	height:100%;
+	Widht:100%;
+	min-width:1300px;
+	margin: 0;
+	background:#bb6615;
+}
+
+#header{
+	height:10%;
+	min-height:80px;
+	Width:100%;
+	margin:0;
+	//background:#d8d8d8; //#ffa500;
+	background:#020202 url("../image/logo.jpg") 0px 0px no-repeat;
+	box-shadow: 0px 5px 5px rgba(10,10,10,0.8);
+}
+
+
+#button-area{
+	height:65px;//7%;
+	Width:100%;
+	min-width:1300px;
+	//min-height:65px;
+	background:#bb6615;
+}
+
+#publish{
+	margin:0 10px;
+	position:relative;
+	top: 15%;
+	left:2%;
+	mirgin-right:2%;
+	padding:10px;
+	height:25px;
+	width:120px;
+	background:#226e01;
+	color : white;
+	text-align:center;
+	float:left;
+	cursor:pointer;
+}
+#publish:hover{
+	opacity:0.9;
+}
+#publish:active{
+	transform:translateY(1px);
+	opacity:0.8;
+}
+#save{
+	margin:0 10px;
+	position:relative;
+	top: 15%;
+	left:2%;
+	padding:10px;
+	height:25px;
+	width:120px;
+	background:#226e01;
+	color : white;
+	text-align:center;
+	float:left;
+	cursor:pointer;
+}
+#save:hover{
+	opacity:0.9;
+}
+#save:active{
+	transform:translateY(1px);
+	opacity:0.8;
+}
+input[type="text"]#heading{
+	margin:0 10px;
+	width: 750px;
+	position:relative;
+	top: 15%;
+	left:2%;
+    padding: 12px 20px;
+    height:43px;
+   // margin: 25px 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    float:left;
+}
+
+#text-area{
+	height:480px;
+	Width:98%;
+	margin:auto;
+	background:#d3d3d3;
+	clear:both;
+	z-index:-1;
+}
+
+#editor-getcontent
+{
+	height:100%;
+	Width:100%;
+	z-index:-1;
+}
+

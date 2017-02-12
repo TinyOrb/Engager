@@ -1,0 +1,69 @@
+#hbody{
+	margin:auto;
+	//background:black;
+	width:70%;
+	position:relative;
+	top:100px;
+}
+div.graybox{
+	height:120px;
+	width:90%;
+	margin: 15px 0;
+	background:#cfcfcf;
+	border-radius:5px;
+	padding:5px 50px 5px 50px;
+	text-align:justify;
+}
+
+div.graybox:hover{
+	box-shadow: 0 0 10px 5px rgba(140,90,15,0.8); 
+	-moz-box-shadow: 0 0 10px 5px rgba(140,90,15,0.8);  
+	-webkit-box-shadow: 0 0 10px 5px rgba(140,90,15,0.8); 
+	-o-box-shadow: 0 0 10px 5px rgba(140,90,15,0.8); 
+}
+.edit{
+	position:relative;
+	top:40px;
+	margin:0px 0px;
+	width:40px;
+	height:60px;
+	float:left;
+	color:gray;
+	text-decoration:none;
+}
+.delete{
+	position:relative;
+	top:40px;
+	margin:0px 5px;
+	width:40px;
+	height:60px;
+	float:left;
+	color:gray;
+	text-decoration:none;
+}
+.view{
+	position:relative;
+	top:40px;
+	margin:0px 5px;
+	width:40px;
+	height:60px;
+	float:left;
+	color:gray;
+	text-decoration:none;
+}
+
+.publish{
+	position:relative;
+	top:40px;
+	margin:0px 5px;
+	width:40px;
+	height:60px;
+	float:left;
+	color:gray;
+	text-decoration:none;
+}
+
+.edit:hover, div.delete:hover, div.view:hover, .publish:hover{
+	color:#282828;
+	cursor:pointer;
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Report</title>
+
+<script src="script/jquery.min.js"></script>
+<script src="script/dropdown/dd.js"></script>
+<script src="script/jetter.js"></script>
+<script src="script/report.js"></script>
+
+<link rel="stylesheet" href="style/dropdown/dd.css">
+<link rel="stylesheet" href="style/cmn.css">
+<link rel="stylesheet" href="style/report.css">
+<link rel="shortcut icon" type="image/png" href="/image/TinyOrb-ico-logo.png"/>
+
+</head>
+<body>
+
+<div id="header">
+	<div class="dropdown" id="logedin">
+		<a class="account" id="act">Guest</a>
+			<div class="submenu">
+			<ul class="root">
+				<li><a href="/DashBoard.html">Dashboard</a></li>
+				<li><a href="/Profile.html">Profile</a></li>
+				<li><a href="/Report.html">Report</a></li>
+				<li><a href="/logout.html">Logout</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="newpost">
+		<a href="/EditorPage.html?id=new&&PID=-1" target="_blank"
+			id="postbtn">New Post</a>
+	</div>
+</div>
+
+
+<div id="hbody">
+		<div id="report">
+			<div class="report_toggle_button">
+				<h4>Inquiry Form</h4>
+			</div>
+			<div class="report_table_div">
+				<table class="report_table">
+					<tr>
+						<td><input list="Inquiry" name="Inquiry"
+							placeholder="Select here..." /> <datalist id="Inquiry">
+								<option selected value="Inquiry">
+								<option value="Issue Reporting">
+								<option value="Suggestion">
+							</datalist></td>
+					</tr>
+					<tr>
+						<td><input type=text id="issue_title"
+							placeholder="Give some title *" /></td>
+					</tr>
+					<tr>
+						<td><textarea id="issue_description"
+								placeholder="Please describe the issue..." cols=50 rows=10></textarea>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<button id="submitquery">
+								<b>Submit</b>
+							</button>
+						</td>
+					</tr>
+				</table>
+			</div>
+
+			<div class="report_toggle_button">
+				<h4>Previous Report List</h4>
+			</div>
+			<div class="report_table_div" id=report_list>
+				<table class="report_table">
+					<b>No record.</b>
+				</table>
+			</div>
+			<div class="report_close"></div>
+		</div>
+	</div>  
+	
+<div id="message"></div>
+
+<div class="popup_ticket_windows"></div>
+
+</body>
+</html>
